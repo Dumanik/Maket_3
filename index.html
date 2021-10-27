@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var a = $("nav"),
+                b = 700,
+                s =  $(".submenu", a);
+            s.each(function(a, c) {
+                $(c).parent().on({
+                    mouseenter: function() {
+                        $(c).stop(!0).delay(b).fadeIn(600);
+                        s.not(c).stop(!0).delay(300).fadeOut(600)
+                        b = 100
+                    },
+                    mouseleave: function() {
+                        $(c).stop(!0).delay(300).fadeOut(600)
+                    }
+                })
+            }).hide().eq(0).show();
+            a.on({
+                mouseleave: function() {
+                    b = 700
+                }
+            })
+        });
+    </script>
+
+</head>
+<body>
+<div class="wrapper">
+<div class="header clearfix">
+    <div class="container">
+        <div class="header_content">
+            <div class="header_logo">
+                <div class="logo_img">
+                    <img src="https://kaplya-ua.com/wp-content/themes/Kaplya/images/grey.png" alt="kvadrat" width="100px" height="100px">
+                </div>
+                <div class="logo_content">
+                    <div class="logo_title">
+                        <h1>Назва компанї</h1>
+                    </div>
+                    <div class="logo_text">
+                        <p>найкраща компанія</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header_contact ">
+                <p>+7(499) 777-77-77</p>
+                <p>+7(499) 777-77-77</p>
+                <a href="#form" class="form_word">Зворотній зв'язок</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu_block">
+    <div class="container">
+        <div class="container_menu">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" >Головна</a></li>
+                    <li><a href="#" >Каталог</a></li>
+                    <li><a href="#" >Доставка і оплата</a></li>
+                    <li><a href="#">Прайс лист</a></li>
+                    <li><a href="#">Контакти</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="slaider_block">
+    <div class="slider1"></div>
+    <div class="slider2"></div>
+    <div class="slider3"></div>
+</div>
+<div class="pod_menu">
+    <div class="container">
+        <div class="pod_menu_item">
+            <div class="menu_item1">Головна</div>
+            <div class="menu_item1">Каталог</div>
+            <div class="menu_item1">Побутова техніка</div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="main_content">
+            <div class="leftblock clearfix">
+                <div class="dropdown">
+                    <nav>
+                        <ul class="nav_catalog">
+                            <li><a href="#">Автомобілі</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Submenu 1</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item"><a href="#">Побутова техніка</a></li>
+                            <li><a href="#">Мобільна техніка</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Submenu 1</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Компютери</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="price">
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="images/msg664013087-15151.jpg" alt="Price" height="111px" width="97px">
+                        </div>
+                        <div class="price_text"> <h2>Прайс-лист</h2></div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerblock clearfix">
+                    <div class="center_flex_help">
+                <div class="centerblock_content">
+                    <div class="centerblock_item">
+                        <div class="center_icon"><img src="images/photoaparat.jpg" alt="photo" width="210px" height="209px"></div>
+                        <div class="center_text"><a href="#">Найкращий чайник який треба купити!</a></div>
+                        <div class="center_price">
+                            <div class="price_cena"><p>1900р</p></div>
+                            <div class="price_basket"><a href="https://www.google.com.ua/"><img src="images/msg664013087-15188.jpg" width="28px" height="21px" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerblock_content">
+                    <div class="centerblock_item">
+                        <div class="center_icon"><img src="images/photoaparat.jpg" alt="photo" width="210px" height="209px"></div>
+                        <div class="center_text"><a href="#">Найкращий чайник який треба купити!</a></div>
+                        <div class="center_price">
+                            <div class="price_cena"><p>1900р</p></div>
+                            <div class="price_basket"><a href="https://www.google.com.ua/"><img src="images/msg664013087-15188.jpg" width="28px" height="21px" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerblock_content">
+                    <div class="centerblock_item">
+                        <div class="center_icon"><img src="images/photoaparat.jpg" alt="photo" width="210px" height="209px"></div>
+                        <div class="center_text"><a href="#">Найкращий чайник який треба купити!</a></div>
+                        <div class="center_price">
+                            <div class="price_cena"><p>1900р</p></div>
+                            <div class="price_basket"><a href="https://www.google.com.ua/"><img src="images/msg664013087-15188.jpg" width="28px" height="21px" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerblock_content">
+                    <div class="centerblock_item">
+                        <div class="center_icon"><img src="images/photoaparat.jpg" alt="photo" width="210px" height="209px"></div>
+                        <div class="center_text"><a href="#">Найкращий чайник який треба купити!</a></div>
+                        <div class="center_price">
+                            <div class="price_cena"><p>1900р</p></div>
+                            <div class="price_basket"><a href="https://www.google.com.ua/"><img src="images/msg664013087-15188.jpg" width="28px" height="21px" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerblock_content">
+                    <div class="centerblock_item">
+                        <div class="center_icon"><img src="images/photoaparat.jpg" alt="photo" width="210px" height="209px"></div>
+                        <div class="center_text"><a href="#">Найкращий чайник який треба купити!</a></div>
+                        <div class="center_price">
+                            <div class="price_cena"><p>1900р</p></div>
+                            <div class="price_basket"><a href="https://www.google.com.ua/"><img src="images/msg664013087-15188.jpg" width="28px" height="21px" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                     </div>
+                <div class="under_number"> <span>1</span> <span>2</span> <span class="three">3</span> <span>4</span> <span>5</span> <span>6</span> <span>7</span> </div>
+                <div class="hr"></div>
+
+                <div class="under_text_block">
+                    <div class="under_text">
+                        <div class="under_text_left"><p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p></div>
+                        <div class="under_text_right"><p>Много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_content">
+        <div class="footer_copyright">
+            <div class="copyright">© 2012-2013 ЗАО "Компанія"</div>
+            <email >info@name.uk</email>
+        </div>
+            <div class="footer_menu">
+                <nav>
+                    <ul class="menu_footer">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка і оплата</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_about">
+                <div class="footer_logo"><img src="images/msg664013087-14580.jpg" alt="logo_footer" width="36px" height="38px"></div>
+                <div class="footer_text"><a href="#">Розробка сайту -  </a><div class="span">компанія "Піксель Плюс"</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="form" class="form">
+    <div class="form_body">
+        <div class="form_content">
+            <a href="#" class="form_closed">X</a>
+            <div class="form_title">Зворотній зв'язок</div>
+            <div class="form_name">
+                <p>Ваше ім'я*</p>
+                <input type="text" size="30">
+            </div>
+            <div class="form_phone">
+                <p>Телефон*</p>
+                <input type="tel" size="30">
+            </div>
+            <div class="form_mail">
+                <p>Email*</p>
+                <input type="email"  name="email" size="30" required placeholder="">
+            </div>
+            <div class="form_message">
+                <p>Повідомлення*</p>
+                <textarea name="comment"></textarea>
+            </div>
+            <button onclick="alert(this.innerHTML)" type="submit" class="form_button">Відправити</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
