@@ -81,6 +81,7 @@
     <div class="slider1"></div>
     <div class="slider2"></div>
     <div class="slider3"></div>
+
 </div>
 <div class="pod_menu">
     <div class="container">
@@ -220,7 +221,7 @@
 </div>
 </div>
 
-<div id="form" class="form">
+<form action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data" id="form" class="form">
     <div class="form_body">
         <div class="form_content">
             <a href="#" class="form_closed">X</a>
@@ -231,7 +232,7 @@
             </div>
             <div class="form_phone">
                 <p>Телефон*</p>
-                <input type="tel" size="30">
+                <input type="tel" name="tel" size="30" >
             </div>
             <div class="form_mail">
                 <p>Email*</p>
@@ -241,10 +242,10 @@
                 <p>Повідомлення*</p>
                 <textarea name="comment"></textarea>
             </div>
-            <button onclick="alert(this.innerHTML)" type="submit" class="form_button">Відправити</button>
+            <button  type="submit" class="form_button">Відправити</button>
         </div>
     </div>
-</div>
+</form>
 
 </body>
 </html>

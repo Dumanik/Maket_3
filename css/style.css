@@ -179,7 +179,7 @@ a:hover{
 .pod_menu_item{
     display: flex;
     justify-content: flex-start;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -213,7 +213,7 @@ a:hover{
 }
 
 .dropdown ul li a{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     color: #767676;
     font-size: 14px;
     line-height: 18px;
@@ -228,7 +228,7 @@ a:hover{
 }
 
 .price_text{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     line-height: 25px;
     color: #444444;
@@ -255,8 +255,7 @@ a:hover{
 
 }
 .centerblock_item{
-    padding: 0 10px 10px 10px;
-    padding-top: 15px;
+    padding: 15px 10px 10px;
     text-align: center;
 }
 
@@ -265,7 +264,7 @@ padding-top: 10px;
 }
 .center_text a{
 
-    font-family: 'PT Sans';
+    font-family: 'PT Sans',sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -278,7 +277,7 @@ padding-top: 10px;
     padding-top: 65px;
 }
 .price_cena{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans',sans-serif;
     font-size: 28px;
     line-height: 18px;
     font-weight: 700;
